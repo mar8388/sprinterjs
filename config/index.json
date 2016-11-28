@@ -1,4 +1,4 @@
 {
-  "dbUri": "mongodb://localhost/react_app",
+  "dbUri": "mongodb://sprintua:7895123@ds111798.mlab.com:11798/heroku_crcwtzx8",
   "jwtSecret": "a secret phrase!!"
 }
