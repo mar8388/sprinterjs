@@ -1,4 +1,0 @@
-{
-  "dbUri": "mongodb://sprintua:7895123@ds111798.mlab.com:11798/heroku_crcwtzx8",
-  "jwtSecret": "SprinterJS very secret phrase!!"
-}

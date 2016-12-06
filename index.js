@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-const config = require('./config');
 
+const config = require('./config');
 // connect to the database and load models
 require('./server/models').connect(config.dbUri);
 
@@ -12,8 +12,8 @@ require('babel-polyfill');
 
 const app = express();
 // tell the app to look for static files in these directories
-app.use(express.static('./server/static/'));
-app.use(express.static('./client/dist/'));
+app.use(express.static('./public/static/'));
+app.use(express.static('./public/dist/'));
 // tell the app to parse HTTP body messages
 app.use(bodyParser.urlencoded({ extended: false }));
 // pass the passport middleware
@@ -38,7 +38,7 @@ app.use('/api', apiRoutes);
 // Always serve the same HTML file for all requests
 app.get('*', function(req, res, next) {
   console.log('Request: [GET]', req.originalUrl);
-  res.sendFile(__dirname + '/server/static/index.html');
+  res.sendFile(__dirname + '/public/static/index.html');
 });
 
 // Error Handling - Last app.use

@@ -9,7 +9,7 @@ module.exports = {
   entry: ['babel-polyfill',  __dirname + '/client/src/app.jsx'],
   // the bundle file we will get in the result
   output: {
-    path: __dirname + '/client/dist/js',
+    path: __dirname + '/public/dist/js',
     filename: 'bundle.js',
   },
 

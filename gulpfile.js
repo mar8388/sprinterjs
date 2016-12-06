@@ -12,7 +12,7 @@ var path = require('path');
  */
 
 gulp.task('clean:build', function() {
-    del('./client/dist/js/*')
+    del('./public/dist/js/*')
 })
 
 gulp.task('build', ['clean:build'], function() {
