@@ -30,7 +30,9 @@ ReactDom.render((
   </MuiThemeProvider>), document.getElementById('root'));
 
 //ReactDom.render(<App />, document.getElementById('app'));
+
 //React.render(<App />, document.getElementById('app')); //document.querySelector('app')
+
 //ReactDom.render((
   //<MuiThemeProvider muiTheme={getMuiTheme()}>
     //<Router history={browserHistory} routes={routes} />
