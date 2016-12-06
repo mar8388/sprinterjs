@@ -27,7 +27,11 @@ ReactDom.render((
     <Provider store={store}>
       <Router history={browserHistory} routes={routes} />
     </Provider>
-  </MuiThemeProvider>), document.getElementById('app'));
+  </MuiThemeProvider>), document.getElementById('root'));
 
 //ReactDom.render(<App />, document.getElementById('app'));
 //React.render(<App />, document.getElementById('app')); //document.querySelector('app')
+//ReactDom.render((
+  //<MuiThemeProvider muiTheme={getMuiTheme()}>
+    //<Router history={browserHistory} routes={routes} />
+  //</MuiThemeProvider>), document.getElementById('app'));
